@@ -9,53 +9,52 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1142330556974440}
+  m_RootGameObject: {fileID: 1401905164676710}
   m_IsPrefabAsset: 1
---- !u!1 &1142330556974440
+--- !u!1 &1401905164676710
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4122327980373956}
-  - component: {fileID: 61836801082026674}
-  - component: {fileID: 114903625607477598}
-  - component: {fileID: 212301723880106632}
-  - component: {fileID: 114510548175286958}
+  - component: {fileID: 4430679025763088}
+  - component: {fileID: 212712456459352352}
+  - component: {fileID: 61455534202802806}
+  - component: {fileID: 114849703666465352}
   m_Layer: 0
-  m_Name: KillTrigger
-  m_TagString: Untagged
+  m_Name: EnemyWall
+  m_TagString: InvisibleWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4122327980373956
+--- !u!4 &4430679025763088
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142330556974440}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3, y: -6.7, z: -0.0703125}
-  m_LocalScale: {x: 106.05, y: 1, z: 1}
+  m_GameObject: {fileID: 1401905164676710}
+  m_LocalRotation: {x: -0, y: -0, z: 0.009438184, w: -0.9999555}
+  m_LocalPosition: {x: 24.882, y: 1.293, z: 0}
+  m_LocalScale: {x: 0.2770249, y: 0.54992855, z: 1.3358129}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61836801082026674
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.082}
+--- !u!61 &61455534202802806
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142330556974440}
+  m_GameObject: {fileID: 1401905164676710}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.18078995, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -66,37 +65,25 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 74.31986, y: 1}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114510548175286958
+--- !u!114 &114849703666465352
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142330556974440}
+  m_GameObject: {fileID: 1401905164676710}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a11c4bba54f57a48a06b9baa348ff04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114903625607477598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142330556974440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a34fedecfe3aef4680cd5e01f846101, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: SampleScene
---- !u!212 &212301723880106632
+--- !u!212 &212712456459352352
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142330556974440}
+  m_GameObject: {fileID: 1401905164676710}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -123,11 +110,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -39362535
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 1240194475
+  m_SortingLayer: 4
+  m_SortingOrder: 612
   m_Sprite: {fileID: 21300000, guid: b5c38279c9a344a4c94c9690303cf3fc, type: 3}
-  m_Color: {r: 0.18600924, g: 0.41509432, b: 0.22037198, a: 1}
+  m_Color: {r: 0.18600924, g: 0.41509432, b: 0.22037198, a: 0.3019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

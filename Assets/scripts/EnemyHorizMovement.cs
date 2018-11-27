@@ -21,24 +21,21 @@ public class EnemyHorizMovement : MonoBehaviour
     {
         if (Left == true)
         {
-            rbody.MovePosition(rbody.position + (-(Vector2)transform.right * Time.deltaTime));
+            rbody.velocity = -(Vector2)transform.right * speed;
             transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
-            rbody.MovePosition(rbody.position + ((Vector2)transform.right * Time.deltaTime));
-
+            rbody.velocity = (Vector2)transform.right * speed;
             transform.localScale = new Vector3(-1, 1, 1);
-        }
-
-        if (check.isGrounded == false)
-        {
-            Left = !Left;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Left = !Left;
+        if (collision.tag == "InvisibleWall")
+        {
+            Left = !Left;
+        }
     }
 }

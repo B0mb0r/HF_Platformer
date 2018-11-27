@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour
 {
+    public int minimumScoreNeeded;
+
     public string sceneToLoad = "SampleScene";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.tag == "Player" && Monedas.score >= minimumScoreNeeded)
         {
-            print("triggerEnter");
+            Monedas.score = 0;
             SceneManager.LoadScene(sceneToLoad);
         }
     }
