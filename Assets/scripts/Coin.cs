@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monedas : MonoBehaviour
+public class Coin : MonoBehaviour
 {
+    //En speciell variabel som bara resettas om vi stänger av spelet eller specifikt säger åt den att göra det
     public static int score;
 
     public int amount = 1;
@@ -12,15 +13,19 @@ public class Monedas : MonoBehaviour
 
     private void Update()
     {
+        //Coinet roterar 
         transform.Rotate(0, spinSpeed * Time.deltaTime, 0);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Om karaktären colliderar med detta objektet händer något
         if(collision.tag == "Player")
         {
+            //Poängen höjs med olika beroende på hur mycket "amount" är
+            Coin.score += amount;
+            //Coinet försvinner
             Destroy(gameObject);
-            Monedas.score += amount;
         }
     }
 }

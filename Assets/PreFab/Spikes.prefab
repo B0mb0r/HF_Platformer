@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4975515581225840}
   - component: {fileID: 212973268879220866}
   - component: {fileID: 60036080377430170}
-  - component: {fileID: 114954353654236386}
+  - component: {fileID: 114923405873740998}
   m_Layer: 0
   m_Name: Spikes
   m_TagString: Untagged
@@ -51,7 +51,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -93,7 +93,7 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.5}
       - {x: 0.5, y: -0.5}
       - {x: 0.48535085, y: -0.4641347}
---- !u!114 &114954353654236386
+--- !u!114 &114923405873740998
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1095350583727484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a34fedecfe3aef4680cd5e01f846101, type: 3}
+  m_Script: {fileID: 11500000, guid: d40b90027e25a864491e89bd24b0b317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene

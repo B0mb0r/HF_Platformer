@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 60720063746036016}
   - component: {fileID: 50351102872457972}
   - component: {fileID: 114852570887360818}
-  - component: {fileID: 114728749637522086}
+  - component: {fileID: 114526396335313958}
   m_Layer: 0
   m_Name: EnemyRat
   m_TagString: Enemy
@@ -109,7 +109,7 @@ PolygonCollider2D:
       - {x: 0.31511402, y: -0.4378078}
       - {x: 0.3947363, y: -0.33422518}
       - {x: 0.41085148, y: -0.2509389}
---- !u!114 &114728749637522086
+--- !u!114 &114526396335313958
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1734155214890032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a34fedecfe3aef4680cd5e01f846101, type: 3}
+  m_Script: {fileID: 11500000, guid: d40b90027e25a864491e89bd24b0b317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: SampleScene
@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  xSize: 1
   Left: 1
   check: {fileID: 0}
 --- !u!212 &212298426689418550

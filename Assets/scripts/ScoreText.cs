@@ -10,12 +10,14 @@ public class ScoreText : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        //Våran variabel kopplas till rätt text
         text = GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        text.text = string.Format("Score: {0:0000}", Monedas.score);
+        //Detta visar hur poängen skrivs ut på skärmen
+        text.text = string.Format("Score: {0:0000}", Coin.score);
     }
 }
