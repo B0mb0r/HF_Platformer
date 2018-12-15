@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    //En speciell variabel som bara resettas om vi stänger av spelet eller specifikt säger åt den att göra det
+    //static gör att variabeln inte resettas när vi loadar en ny scen bara om vi stänger av spelet eller specifikt säger till den att göra det.
     public static int score;
 
     public int amount = 1;
@@ -19,7 +19,7 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Om karaktären colliderar med detta objektet händer något
+        //Om spelaren colliderar med detta objektet händer något
         if(collision.tag == "Player")
         {
             //Poängen höjs med olika beroende på hur mycket "amount" är

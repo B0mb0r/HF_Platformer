@@ -9,7 +9,7 @@ public class winLevel : MonoBehaviour
 
     public string sceneToLoad = "SampleScene";
 
-    //När vi kommer i kontakt med något så händer något
+    //När en trigger kommer i kontakt med detta objektet som är en trigger så händer något
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Om något med taggen player nuddar oss och har tillräckligt med poäng så händer något.

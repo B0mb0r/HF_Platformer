@@ -7,7 +7,6 @@ public class restartLevel : MonoBehaviour
 {
     public string sceneToLoad = "SampleScene";
 
-    //När vi kommer i kontakt med något så händer något
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Om något med taggen player nuddar detta objekt så händer något.

@@ -23,6 +23,16 @@ public class PlayerMovement : MonoBehaviour
     {
         //När en av horizontala rörelse knapparna trycks in så går Player i den riktningen med Playerns moveSpeed
         rbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, rbody.velocity.y);
+        //när leftShift trycks ner så tripplas movementspeeden
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            moveSpeed = moveSpeed * 3f;
+        }
+        //när leftshift släpps går den tillbaka till normalt
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            moveSpeed = moveSpeed / 3f;
+        }
         //Om hopp knappen trycks in så händer något
         if (Input.GetButtonDown("Jump"))
         {
